@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Better Ads</title>
-  </head>
-  <body>
-    <h1>Test for Better Ads
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>oading...</title>
+  <script>
+    var target = Math.ceil(Math.random() * 6)
+    var redirect_url = target + '/' + location.search;
+    if (document.referrer) {
+      var referrer = "referrer=" + encodeURIComponent(document.referrer);
+      redirect_url = redirect_url + (location.search ? '&' : '?') + referrer;
+    }
+    location.href = redirect_url;
+  </script>
+</head>
+<body>
+  <h1>Loading...</h1>
+</body>
 </html>
